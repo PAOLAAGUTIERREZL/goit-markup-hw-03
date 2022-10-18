@@ -19,8 +19,12 @@ body {
 
 .container{
   width: 1200px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-header{
+  width: 1200px; 
   display: flex; 
-  margin: 0 auto;
   justify-content: space-between; 
   align-items: center;
   margin-left: auto;
@@ -83,12 +87,12 @@ body {
 }
 .menu-flex{
   padding:5px;
-  margin:50px;
+  /* margin:50px; */
   list-style: none;
   border-radius: 20px;
   box-shadow: none;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .menu-flex a {
   padding: 5px 30px; 
@@ -185,27 +189,24 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #757575; 
 }  
-.cont33-flex{
-  padding:0px;
-  margin:0px;
-  /* list-style: none;  */
+.cont33-flex{      /*matriz*/
+  padding-top: 56px;
   border-radius: none;
   box-shadow: none;
   display: flex;
-  /* justify-content: center;   */
-  /* align-items: center;  */
   list-style: none;
   flex-direction: column;
   justify-content:center;
+
 } 
-.cont4-flex{    /* tabla de nuestro equipo*/ 
+.cont4-flex{    /* tabla de nuestro equipo yy dentro de la matriz*/ 
   background: #FFFFFF;
   display: flex;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   list-style: none;
-  padding:5px;
-  margin:5px;
+  /* padding:auto; */
+  /* margin:5px; */
   /* list-style: none; */
   border-radius: none;
   box-shadow: none;
@@ -213,6 +214,8 @@ color: #757575;
   justify-content: center; 
   align-items: center; 
   flex-direction: column; 
+  
+
 }
 .cont31-flex{      /* nuestro equipo y a que nos dedicamos es solo el titulo que es h2*/
   font-family: 'Roboto';
@@ -253,7 +256,7 @@ color: #757575;
 
 }
 .matriz-flex{         /* matriz principal de portfolio */
-  padding:0px 215px 30px 30px;   /*arriba derecha abajo izquiera */
+  padding:0px 215px 30px 30px;    /* rriba derecha abajo izquiera*/
   margin:5px;
   /* margin top: 55.05px; */
   list-style: none; 
@@ -262,8 +265,7 @@ color: #757575;
   display: flex;
   /* justify-content:first baseline;  */
   align-items: center;  
-  gap: 30px;
-  display: flex;
+  gap: none;
 
 
 }
@@ -305,8 +307,8 @@ color: #757575;
 /* portfolio------------------------------------------------------------------------------------------------------------------------- */
 
 .menu2-flex{  /*botones principales*/
-  padding:106px;
-  margin:50px;
+  padding-top:112px; 
+  margin:auto;
   list-style: none;
   border-radius: 20px;
   background-color:#ffff;
