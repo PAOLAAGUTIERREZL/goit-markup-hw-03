@@ -146,7 +146,7 @@ color: #FFFFFF;
 
 .cont3-flex{         /*nuestro equipo posicion vertical */
       padding-top: 50px;/*arriba derecha abajo izquiera */
-      padding-left: 100px;  
+      padding-left: 50px;  
       margin:0px;
       list-style: none;
       border-radius: none;
@@ -155,14 +155,19 @@ color: #FFFFFF;
       justify-content: center; 
       align-items: center;
       gap: 23px;
-      background: #F5F4FA;
+      padding-bottom: 94px;
+    }
+
+ .fondo-gris{   /*index */
+  margin-top: 60px;
+  background: #F5F4FA;
 }
 .fondo-ne{
   background: #FFFFFF;
 }
 .cont35-flex{         /* imagenes de aqué nos dedicamos  */
   padding-top: 50px;/*arriba derecha abajo izquiera */
-  padding-left: 160px;  
+  padding-left: 50px;  
   list-style: none;
   border-radius: none;
   box-shadow: none;
@@ -181,6 +186,8 @@ line-height: 19px;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+background-color: #FFFFFF;
+
 
 } 
 .cont3-flex h5{  /*cargos */
@@ -192,6 +199,9 @@ line-height: 19px;
 text-align: center;
 letter-spacing: 0.03em;
 color: #757575; 
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+background-color: #FFFFFF;
 
 }  
 .cont33-flex{      /*matriz*/
@@ -203,10 +213,25 @@ color: #757575;
   flex-direction: column;
   justify-content:center;
   display: flex;
-  padding-left: 100px;
-
-
+  padding-left: 30px;
+  padding-bottom: 30px;
 } 
+.matriz-flex{         /* matriz principal de portfolio */
+  /*padding:0px 215px 30px 30px;    /* rriba derecha abajo izquiera*/
+  /* margin:5px; */
+  /* margin top: 55.05px; */
+  list-style: none; 
+  border-radius: none;
+  box-shadow: none;
+  display: flex;
+  /* justify-content:first baseline;  */
+  align-items: center;  
+  gap:5px;
+  padding-bottom: 30px; 
+  
+
+}
+
 ul{    /* tabla de nuestro equipo yy dentro de la matriz*/ 
    list-style: none;
 }
@@ -219,7 +244,7 @@ font-size: 36px;
 line-height: 42px;
 text-align: center;
 letter-spacing: 0.03em;
-padding-top: 20px;
+padding-top: 100px;
 color: #212121;
 
   
@@ -236,6 +261,7 @@ color: #212121;
   color: #212121;
   text-decoration: none; 
   /* margin-block: 10px; */
+
 }
 
 
@@ -248,24 +274,14 @@ color: #212121;
   letter-spacing: 0.03em;
   color: #757575;
   text-decoration: none;
-
-}
-.matriz-flex{         /* matriz principal de portfolio */
-  /*padding:0px 215px 30px 30px;    /* rriba derecha abajo izquiera*/
-  /* margin:5px; */
-  /* margin top: 55.05px; */
-  list-style: none; 
-  border-radius: none;
-  box-shadow: none;
-  display: flex;
-  /* justify-content:first baseline;  */
-  align-items: center;  
-  gap: none;
-  padding-left: 0px;
-
+ 
 
 }
 
+.fondo-matriz{
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+}
 
 .cont5-flex{   /* pie de pagina */
   height: 252px;
@@ -291,7 +307,7 @@ color: #212121;
   text-transform: uppercase;
   color: #FFFFFF;
   display: flex;
-  padding :50px;
+  padding-top :50px;
   margin:0px;
 }
 
@@ -320,7 +336,7 @@ address {
 /* portfolio------------------------------------------------------------------------------------------------------------------------- */
 
 .menu2-flex{  /*botones principales*/
-  padding-top:112px; 
+  padding-top:50px; 
   margin:auto;
   list-style: none;
   border-radius: 20px;
@@ -328,7 +344,7 @@ address {
   box-shadow: none;
   display: flex;
   gap: 8px;
-  justify-content: center; 
+  justify-content: center;
 }
 .main-buttons {
   font-style: normal;
