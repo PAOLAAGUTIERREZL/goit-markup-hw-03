@@ -10,25 +10,18 @@ body {
 :root {
   --underline-color: #2196f3;
 }
-.style-header{
-  background-color: #ffff; 
-  height: 80px; 
-  display: flex; 
-  align-items: center;
-}
-
 .container{
-  width: 1200px; 
-  margin-left: auto;
-  margin-right: auto;
-}
+  width: 1200px;
+  margin: 0 auto; 
+} 
 .container-header{
-  width: 1200px; 
   display: flex; 
   justify-content: space-between; 
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #ffff; 
+  height: 80px;
+  margin:0px;
+  padding-left: 100px;
 }
 
 .link-menu,
@@ -82,9 +75,9 @@ body {
   display: flex; 
   align-items: center;
 }
-.nav-style{
+/* .nav-style{
   margin-left:93px;
-}
+} */
 .menu-flex{
   padding:5px;
   /* margin:50px; */
@@ -99,20 +92,14 @@ body {
 }
 
 .cont1-flex{    /*bloque superior gris*/
-  height: 600px;
-  left: -4px;
-  top: 80px;
-  padding:100px; 
-  margin:0px;
-  list-style: none;
-  border-radius: none;
   background: #2F303A;
-  box-shadow: none;
+  height: 500px;
+  padding:100px;
+  margin:0px;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
-
+  align-items:center; 
+  /* justify-content: center;  */
 
 }
 
@@ -129,25 +116,26 @@ color: #FFFFFF;
 
 }
 .cont1-flex button {
-  padding: 10px 32px;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  background: #2196f3;
+  align-items: center;
+  padding: 10px 32px; 
+  gap: 10px;
   color: #FFFFFF;
   cursor: pointer;
-  flex-direction: row;
   border-style: none;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  border-radius: 4px;
+  margin: auto;
+  background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   
 }
 /* atencion a los detalles... */
 .cont2-flex{
-  padding: 95px;  /*arriba derecha abajo izquiera */
+  padding-top: 95px;/*arriba derecha abajo izquiera */
+  padding-left: 100px; 
   margin:0px;
-  list-style: none;
   border-radius: none;
   box-shadow: none;
   display: flex;
@@ -156,17 +144,32 @@ color: #FFFFFF;
   gap: 30px;
   }
 
-.cont3-flex{         /* imagenes de aqué nos dedicamos y nuestro equipo posicion vertical */
-      padding: 95px 215px 94px 215px; 
-      margin:10px;
+.cont3-flex{         /*nuestro equipo posicion vertical */
+      padding-top: 50px;/*arriba derecha abajo izquiera */
+      padding-left: 100px;  
+      margin:0px;
       list-style: none;
       border-radius: none;
       box-shadow: none;
       display: flex;
       justify-content: center; 
       align-items: center;
-      gap: 30.26px;
-
+      gap: 23px;
+      background: #F5F4FA;
+}
+.fondo-ne{
+  background: #FFFFFF;
+}
+.cont35-flex{         /* imagenes de aqué nos dedicamos  */
+  padding-top: 50px;/*arriba derecha abajo izquiera */
+  padding-left: 160px;  
+  list-style: none;
+  border-radius: none;
+  box-shadow: none;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 23px;
 }
 
 .cont3-flex h4{  /*nombres */
@@ -178,6 +181,7 @@ line-height: 19px;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+
 } 
 .cont3-flex h5{  /*cargos */
   font-family: 'Roboto';
@@ -188,6 +192,7 @@ line-height: 19px;
 text-align: center;
 letter-spacing: 0.03em;
 color: #757575; 
+
 }  
 .cont33-flex{      /*matriz*/
   padding-top: 56px;
@@ -197,38 +202,28 @@ color: #757575;
   list-style: none;
   flex-direction: column;
   justify-content:center;
+  display: flex;
+  padding-left: 100px;
+
 
 } 
-.cont4-flex{    /* tabla de nuestro equipo yy dentro de la matriz*/ 
-  background: #FFFFFF;
-  display: flex;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  list-style: none;
-  /* padding:auto; */
-  /* margin:5px; */
-  /* list-style: none; */
-  border-radius: none;
-  box-shadow: none;
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  flex-direction: column; 
+ul{    /* tabla de nuestro equipo yy dentro de la matriz*/ 
+   list-style: none;
+}
+
+.subtitulo {      /* nuestro equipo y a que nos dedicamos es solo el titulo que es h2*/
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+padding-top: 20px;
+color: #212121;
+
   
 
-}
-.cont31-flex{      /* nuestro equipo y a que nos dedicamos es solo el titulo que es h2*/
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  justify-content:center; 
-  text-align: center;
-  /* letter-spacing: 0.03em; */
-  color: #212121;
-  padding-top: 2px; /* margen superior de a que nos dedicamos */
-  display: flex;
 }
 
 .menu {
@@ -240,7 +235,7 @@ color: #757575;
   letter-spacing: 0.06em;
   color: #212121;
   text-decoration: none; 
-  margin-block: 10px;
+  /* margin-block: 10px; */
 }
 
 
@@ -256,8 +251,8 @@ color: #757575;
 
 }
 .matriz-flex{         /* matriz principal de portfolio */
-  padding:0px 215px 30px 30px;    /* rriba derecha abajo izquiera*/
-  margin:5px;
+  /*padding:0px 215px 30px 30px;    /* rriba derecha abajo izquiera*/
+  /* margin:5px; */
   /* margin top: 55.05px; */
   list-style: none; 
   border-radius: none;
@@ -266,6 +261,7 @@ color: #757575;
   /* justify-content:first baseline;  */
   align-items: center;  
   gap: none;
+  padding-left: 0px;
 
 
 }
@@ -273,7 +269,7 @@ color: #757575;
 
 .cont5-flex{   /* pie de pagina */
   height: 252px;
-  padding-left: 215px;
+  /* padding-left: 215px; */
   padding-top: 40px;
   margin:0px;
   list-style: none;
@@ -281,7 +277,7 @@ color: #757575;
   background: #2F303A;
   box-shadow: none;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: row;
   /* justify-content: space-between;  */
   }
   
@@ -297,9 +293,26 @@ color: #757575;
   display: flex;
   padding :50px;
   margin:0px;
+}
 
 
 
+
+footer {
+    height: 252px;
+    width: 100%;
+    left: 0px;
+    top: 1628px;
+    border-radius: 0px;
+    background-color: #2f303a;
+    
+    /* margin:auto; */
+}
+address {
+  display: flex;
+  flex-direction: row;
+  padding-left: 50px;
+  
 }
 
 
@@ -436,21 +449,6 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 
-
-/* .ourservices-button {
-  width: 700px;
-  height: 38ox;
-  background-color: #2196f3;
-  color: white;
-  border-color: #2196f3;
-    border-radius: 4px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  cursor: pointer;
-  font-family: "Roboto", sans-serif;
-} */
 
 h2xx {
   font-style: normal;
